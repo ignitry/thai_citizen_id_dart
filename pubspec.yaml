@@ -1,6 +1,6 @@
 name: thai_citizen_id
 description: Utilities related to Thai Citizen ID
-version: 1.0.1
+version: 1.1.0
 repository: https://github.com/ignitry/thai_citizen_id_dart
 
 environment:
