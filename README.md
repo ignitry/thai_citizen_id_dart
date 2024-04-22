@@ -1,6 +1,6 @@
 # Thai Citizen ID - Dart
 
-A utility program related to Thai Citizen ID
+A utility program related to Thai Citizen ID, published at [pub.dev](https://pub.dev/packages/thai_citizen_id)
 
 ## Features
 - Validation
