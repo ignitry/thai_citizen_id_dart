@@ -1,4 +1,5 @@
 import 'package:thai_citizen_id/validator.dart';
+import 'package:thai_citizen_id/generator.dart';
 
 // Example:
 // String rawID = "";                           // Your string
@@ -11,6 +12,10 @@ class ThaiCitizenID {
   late List<String> errors;
 
   ThaiCitizenID(this.rawID) {
+    _validate();
+  }
+
+  ThaiCitizenID.generate() : rawID = Generator.generateThaiCitizenID() {
     _validate();
   }
 
