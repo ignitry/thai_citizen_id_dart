@@ -20,5 +20,17 @@ void main() {
       expect(thaiID.valid(), false);
       expect(thaiID.errors, ['invalid_format']);
     });
+
+    test('generated ID should be valid', () {
+      final generatedID = ThaiCitizenID.generate();
+      expect(generatedID.valid(), true);
+      expect(generatedID.errors, isEmpty);
+    });
+
+    test('generated ID should have 13 digits', () {
+      final generatedID = ThaiCitizenID.generate();
+      expect(generatedID.rawID.length, equals(13));
+      expect(RegExp(r'^\d{13}$').hasMatch(generatedID.rawID), isTrue);
+    });
   });
 }
