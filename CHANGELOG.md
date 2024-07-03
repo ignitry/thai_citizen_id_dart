@@ -1,3 +1,7 @@
+## 1.2.1
+
+- Update changelog.
+
 ## 1.2.0
 
 - Add `Generator` and `ThaiCitizenID.generate()`.
