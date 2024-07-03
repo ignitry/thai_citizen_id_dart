@@ -18,5 +18,11 @@ void main() {
       expect(generatedID.length, equals(13));
       expect(RegExp(r'^\d{13}$').hasMatch(generatedID), isTrue);
     });
+
+    test('should have 1 as a starting digit', () {
+      String generatedID = Generator.generateThaiCitizenID();
+
+      expect(generatedID[0], equals("1"));
+    });
   });
 }
