@@ -11,3 +11,9 @@ A utility program related to Thai Citizen ID, published at [pub.dev](https://pub
   thaiID.valid();                              // return boolean
   thaiID.errors;                               // return list of errors
   ```
+
+- Generation
+
+  ```dart
+  String generatedID = ThaiCitizenID.generate();
+  ```
