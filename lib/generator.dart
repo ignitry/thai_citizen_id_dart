@@ -3,7 +3,10 @@ import 'dart:math';
 class Generator {
   static String generateThaiCitizenID() {
     Random random = Random();
-    List<int> numbers = List.generate(12, (index) => random.nextInt(10));
+
+    // Ensure the first digit is always '1'
+    // To make it more realistic in test scenarios.
+    List<int> numbers = [1] + List.generate(11, (index) => random.nextInt(10));
 
     int sum = numbers
         .asMap()
