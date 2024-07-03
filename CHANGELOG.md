@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Add `Generator` and `ThaiCitizenID.generate()`.
+
 ## 1.1.0
 
 - Separate `Validator` into its own class.
