@@ -15,8 +15,8 @@ class ThaiCitizenID {
     _validate();
   }
 
-  ThaiCitizenID.generate() : rawID = Generator.generateThaiCitizenID() {
-    _validate();
+  static String generate() {
+    return Generator.generateThaiCitizenID();
   }
 
   bool valid() {
